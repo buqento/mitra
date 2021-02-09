@@ -10,52 +10,57 @@
     {
       name: "id",
       hero: {
-        welcome: "Selamat Datang",
-        serve: "KAMI MELAYANI DENGAN SANGAT BERDEDIKASI",
-        provide: "Kami menyediakan layanan terbaik dalam logistik transportasi, menyediakan kantor kontainer, pergudangan dan dokumen ekspor - impor bea cukai.",
+        welcome: "Selamat Datang di",
+        serve: "Melayani dengan sepenuh hati",
+        provide: "Kami menyediakan layanan terbaik transportasi logistik, penanganan kargo, pergudangan dan kepengurusan dokumen ekspor – impor.",
         get_started: "Mulai"
       },
       about: {
-        title: "Tentang",
-        head_text: "Visi Kami",
-        opening_text: "Jadilah perusahaan garis depan pertama yang memenuhi kebutuhan pelanggan kami.",
+        title: "Tentang Kami",
+        head_text_1: "Visi",
+        head_text_2: "kami",
+        opening_text: "Menjadi perusahaaan logistik nasional dan terdepan dalam memenuhi kebutuhan pelanggan.",
         mission: {
           title: "Misi",
-          mission_1: "Untuk menawarkan produk pelanggan kami berdasarkan standar dan anggaran.",
-          mission_2: "Untuk menjaga hubungan dengan kualitas dan nilai yang unggul dengan pelanggan dan pemangku kepentingan.",
-          mission_3: "Untuk menjaga rasa saling percaya antara perusahaan kami dan pelanggan kami yang berharga.",
+          mission_1: "Memberikan pelayanan sesuai standar dan budget pelanggan.",
+          mission_2: "Menjalin kerjasama dengan mutu terbaik dan saling menguntungkan.",
+          mission_3: "Membina kesepahaman dan kemitraan jangka panjang.",
         },
         integrity: {
           title: "Integritas",
-          paragraph: "Kami percaya bahwa menciptakan keamanan, lingkungan yang menyenangkan, dan kepuasan pelanggan bagi pelanggan dan pemangku kepentingan kami sebagai salah satu tujuan kami. Berdasarkan pengalaman yang kami miliki, kami telah mengirimkan kargo kami ke banyak tujuan di Indonesia."
+          description: "Kami banyak menangani cargo untuk barang-barang proyek, barang-barang industri dan juga barang-barang perdagangan. Barang-barang biasanya kami ambil di pabrik atau di lokasi proyek atau di perusahaan-perusahaan dan gudang-gudang. Kami mengantarnya sampai ke alamat tujuan baik di kota maupun di daerah terpencil seperti lokasi penambangan atau proyek-proyek infrasturktur dan proyek lainya."
         }
       },
       services: {
         title: "layanan",
-        head_text: "Kami menawarkan Layanan yang luar biasa",
-        opening_text: "Kami percaya bahwa kepuasan pelanggan adalah kunci kesuksesan bisnis. Kami memahami bahwa mengetahui pelanggan kami dan kebutuhan mereka akan membantu memberikan layanan terbaik bagi mereka."
+        head_text_1: "Kami menawarkan",
+        head_text_2: "layanan terbaik",
+        opening_text: "Kami tim menejemen dari PT Mitratiga Perkasa Abadi atau MPA menyadari bahwa kepuasan pelanggan adalah kunci sukses suatu bisnis/ usaha. Kami memahami dan mengetahui kebutuhan para pelanggan kami, oleh karenanya kami memberikan kepada mereka pelayanan terbaik dalam hal transportasi logistik, penanganan kargo, pergudangan dan kepengurusan dokumen ekspor – impor (customs clearance document)."
       },
       team: {
-        title: "tim",
-        head_text: "Tim Pekerja Keras Kami",
+        title: "Tim kerja",
+        head_text_1: "Tim kerja kami",
+        head_text_2: "luar biasa",
         opening_text: "Kami bangga melayani Anda."
       },
       contact: {
         title: "kontak",
-        head_text: "Hubungi Kami"
+        head_text_1: "Hubungi",
+        head_text_2: "Kami"
       }
     },
     {
       name: "en",
       hero: {
         welcome: "Welcome to",
-        serve: "WE SERVE WITH HIGHLY DEDICATED",
+        serve: "we serve with highly dedicated",
         provide: "We are providing with the best service in transportation logistics, providing container office, warehousing and customs clearance export - import documents.",
         get_started: "Get Started"
       },
       about: {
         title: "About",
-        head_text: "Our Vision",
+        head_text_1: "Our",
+        head_text_2: "Vision",
         opening_text: "Be the first front liner company to satisfy the needs of our customers.",
         mission: {
           title: "Mission",
@@ -65,17 +70,19 @@
         },
         integrity: {
           title: "Integrity",
-          paragraph: "We believe that creating a safety, enjoyable environment and customer satisfaction of our customers and stakeholders as one of our goals. Based on the experiences we had, we have delivered our cargo to many destinations in Indonesia."
+          description: "We believe that creating a safety, enjoyable environment and customer satisfaction of our customers and stakeholders as one of our goals. Based on the experiences we had, we have delivered our cargo to many destinations in Indonesia."
         }
       },
       services: {
         title: "services",
-        head_text: "We do offer awesome Services",
+        head_text_1: "We do offer awesome",
+        head_text_2: "Services",
         opening_text: "We believe that customer satisfaction is a key to business success. We understand that knowing our customers and their needs will help providing them with the best service."
       },
       team: {
         title: "team",
-        head_text: "Our Hardworking Team",
+        head_text_1: "Our Hardworking",
+        head_text_2: "Team",
         opening_text: "We're proud to serve You."
       },
       contact: {
@@ -85,16 +92,49 @@
     }
   ]
 
-  $("#hero").click(function (e) {
-    $("#hero-welcome").text(langData[0].hero.welcome)
-    $("#hero-serve").text(langData[0].hero.serve)
-    $("#hero-provide").text(langData[0].hero.provide)
-    $("#hero-get-started").text(langData[0].hero.get_started)
+  $("#lang").click(function (e) {
+    var id = 0
+    const lang = $("#lang").text()
+    if (lang === "English") {
+      id = 1
+      $("#lang").text("Bahasa Indonesia")
+    } else {
+      $("#lang").text("English")
+    }
+    $("#hero-welcome").text(langData[id].hero.welcome)
+    $("#hero-serve").text(langData[id].hero.serve)
+    $("#hero-provide").text(langData[id].hero.provide)
+    $("#hero-get-started").text(langData[id].hero.get_started)
 
     // about
-    $("#about-title").text(langData[0].about.title)
-    $("#about-head-text").text(langData[0].about.head_text)
-    $("#about-opening-text").text(langData[0].about.opening_text)
+    $("#about-title").text(langData[id].about.title)
+    $("#about-head-text-1").text(langData[id].about.head_text_1)
+    $("#about-head-text-2").text(langData[id].about.head_text_2)
+    $("#about-opening-text").text(langData[id].about.opening_text)
+    $("#about-mission-title").text(langData[id].about.mission.title)
+    $("#about-mission-1").text(langData[id].about.mission.mission_1)
+    $("#about-mission-2").text(langData[id].about.mission.mission_2)
+    $("#about-mission-3").text(langData[id].about.mission.mission_3)
+    $("#about-integrity-title").text(langData[id].about.integrity.title)
+    $("#about-integrity-description").text(langData[id].about.integrity.description)
+
+    // services
+    $("#services-title").text(langData[id].services.title)
+    $("#services-head-text-1").text(langData[id].services.head_text_1)
+    $("#services-head-text-2").text(langData[id].services.head_text_2)
+    $("#services-opening-text").text(langData[id].services.opening_text)
+
+    // team
+    $("#team-title").text(langData[id].team.title)
+    $("#team-head-text-1").text(langData[id].team.head_text_1)
+    $("#team-head-text-2").text(langData[id].team.head_text_2)
+    $("#team-opening-text").text(langData[id].team.opening_text)
+
+    // contact
+    $("#contact-title").text(langData[id].contact.title)
+    $("#contact-head-text-1").text(langData[id].contact.head_text_1)
+    $("#contact-head-text-2").text(langData[id].contact.head_text_2)
+
   });
 
 
