@@ -9,6 +9,13 @@
   const langData = [
     {
       name: "id",
+      nav: {
+        home: "Beranda",
+        about: "Tentang Kami",
+        services: "Layanan",
+        team: "Tim Kerja",
+        contact: "Kontak"
+      },
       hero: {
         welcome: "Selamat Datang di",
         serve: "Melayani dengan sepenuh hati",
@@ -51,6 +58,13 @@
     },
     {
       name: "en",
+      nav: {
+        home: "Home",
+        about: "About",
+        services: "Services",
+        team: "Team",
+        contact: "Contact"
+      },
       hero: {
         welcome: "Welcome to",
         serve: "we serve with highly dedicated",
@@ -101,6 +115,14 @@
     } else {
       $("#lang").text("English")
     }
+
+    // nav
+    $("#nav-home").text(langData[id].nav.home)
+    $("#nav-about").text(langData[id].nav.about)
+    $("#nav-services").text(langData[id].nav.services)
+    $("#nav-team").text(langData[id].nav.team)
+    $("#nav-contact").text(langData[id].nav.contact)
+
     $("#hero-welcome").text(langData[id].hero.welcome)
     $("#hero-serve").text(langData[id].hero.serve)
     $("#hero-provide").text(langData[id].hero.provide)
