@@ -42,7 +42,13 @@
         title: "layanan",
         head_text_1: "Kami menawarkan",
         head_text_2: "layanan terbaik",
-        opening_text: "Kami tim menejemen dari PT Mitratiga Perkasa Abadi atau MPA menyadari bahwa kepuasan pelanggan adalah kunci sukses suatu bisnis/ usaha. Kami memahami dan mengetahui kebutuhan para pelanggan kami, oleh karenanya kami memberikan kepada mereka pelayanan terbaik dalam hal transportasi logistik, penanganan kargo, pergudangan dan kepengurusan dokumen ekspor – impor (customs clearance document)."
+        opening_text: "Kami tim menejemen dari PT Mitratiga Perkasa Abadi atau MPA menyadari bahwa kepuasan pelanggan adalah kunci sukses suatu bisnis/ usaha. Kami memahami dan mengetahui kebutuhan para pelanggan kami, oleh karenanya kami memberikan kepada mereka pelayanan terbaik dalam hal transportasi logistik, penanganan kargo, pergudangan dan kepengurusan dokumen ekspor – impor (customs clearance document).",
+        box: {
+          services_logistics_cargo: "Logistik & Kargo",
+          services_container_office: "Peti Kemas Multiguna",
+          services_warehousing: "Pergudangan",
+          services_customs_clearance: "Bea-Cukai"
+        }
       },
       team: {
         title: "Tim kerja",
@@ -91,7 +97,13 @@
         title: "services",
         head_text_1: "We do offer awesome",
         head_text_2: "Services",
-        opening_text: "We believe that customer satisfaction is a key to business success. We understand that knowing our customers and their needs will help providing them with the best service."
+        opening_text: "We believe that customer satisfaction is a key to business success. We understand that knowing our customers and their needs will help providing them with the best service.",
+        box: {
+          services_logistics_cargo: "Logistics & Cargo",
+          services_container_office: "Container Office",
+          services_warehousing: "Warehousing",
+          services_customs_clearance: "Customs Clearance"
+        }
       },
       team: {
         title: "team",
@@ -145,6 +157,10 @@
     $("#services-head-text-1").text(langData[id].services.head_text_1)
     $("#services-head-text-2").text(langData[id].services.head_text_2)
     $("#services-opening-text").text(langData[id].services.opening_text)
+    $("#services-logistics-cargo").text(langData[id].services.box.services_logistics_cargo)
+    $("#services-container-office").text(langData[id].services.box.services_container_office)
+    $("#services-warehousing").text(langData[id].services.box.services_warehousing)
+    $("#services-customs-clearance").text(langData[id].services.box.services_customs_clearance)
 
     // team
     $("#team-title").text(langData[id].team.title)
