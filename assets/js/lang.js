@@ -54,12 +54,24 @@
         title: "Tim kerja",
         head_text_1: "Tim kerja kami",
         head_text_2: "luar biasa",
-        opening_text: "Kami bangga melayani Anda."
+        opening_text: "Kami bangga melayani Anda.",
+        member: {
+          director: "Direktur",
+          marketing: "Kabag. Promosi &amp; Pemasaran",
+          operation: "Kabag. Operasianal",
+          accountant: "Kabag. Keuangan",
+          health: "Kabag. Kesehatan &amp; Keselamatan Kerja (K3)",
+          general: "Kabag. Umum &amp; Humas",
+          call: "Kabag. Pelayanan Pelanggan"
+        }
       },
       contact: {
         title: "kontak",
         head_text_1: "Hubungi",
-        head_text_2: "Kami"
+        head_text_2: "Kami",
+        office: "Kantor",
+        workshop: "Lokakarya",
+        call: "Telepon"
       }
     },
     {
@@ -109,11 +121,23 @@
         title: "team",
         head_text_1: "Our Hardworking",
         head_text_2: "Team",
-        opening_text: "We're proud to serve You."
+        opening_text: "We're proud to serve You.",
+        member: {
+          director: "Director",
+          marketing: "Marketing &amp; Promotion Manager",
+          operation: "Operation Manager",
+          accountant: "Accountant Manager",
+          health: "Health &amp; Safety Manager",
+          general: "General Affair &amp; Public Relations",
+          call: "Call Center Manager"
+        }
       },
       contact: {
         title: "contact",
-        head_text: "Contact Us"
+        head_text: "Contact Us",
+        office: "Office",
+        workshop: "Workshop",
+        call: "Call"
       }
     }
   ]
@@ -167,11 +191,21 @@
     $("#team-head-text-1").text(langData[id].team.head_text_1)
     $("#team-head-text-2").text(langData[id].team.head_text_2)
     $("#team-opening-text").text(langData[id].team.opening_text)
+    $("#member-director").text(langData[id].team.member.director)
+    $("#member-marketing").text(langData[id].team.member.marketing)
+    $("#member-operation").text(langData[id].team.member.operation)
+    $("#member-accountant").text(langData[id].team.member.accountant)
+    $("#member-health").text(langData[id].team.member.health)
+    $("#member-general").text(langData[id].team.member.general)
+    $("#member-call").text(langData[id].team.member.call)
 
     // contact
     $("#contact-title").text(langData[id].contact.title)
     $("#contact-head-text-1").text(langData[id].contact.head_text_1)
     $("#contact-head-text-2").text(langData[id].contact.head_text_2)
+    $("#contact-office").text(langData[id].contact.office)
+    $("#contact-workshop").text(langData[id].contact.workshop)
+    $("#contact-call").text(langData[id].contact.call)
 
   });
 
