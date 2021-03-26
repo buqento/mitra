@@ -57,11 +57,11 @@
         opening_text: "Kami bangga melayani Anda.",
         member: {
           director: "Direktur",
-          marketing: "Kabag. Promosi &amp; Pemasaran",
+          marketing: "Kabag. Promosi dan Pemasaran",
           operation: "Kabag. Operasianal",
           accountant: "Kabag. Keuangan",
-          health: "Kabag. Kesehatan &amp; Keselamatan Kerja (K3)",
-          general: "Kabag. Umum &amp; Humas",
+          health: "Kabag. Kesehatan dan Keselamatan Kerja (K3)",
+          general: "Kabag. Umum dan Humas",
           call: "Kabag. Pelayanan Pelanggan"
         }
       },
@@ -124,11 +124,11 @@
         opening_text: "We're proud to serve You.",
         member: {
           director: "Director",
-          marketing: "Marketing &amp; Promotion Manager",
+          marketing: "Marketing and Promotion Manager",
           operation: "Operation Manager",
           accountant: "Accountant Manager",
-          health: "Health &amp; Safety Manager",
-          general: "General Affair &amp; Public Relations",
+          health: "Health and Safety Manager",
+          general: "General Affair and Public Relations Manager",
           call: "Call Center Manager"
         }
       },
