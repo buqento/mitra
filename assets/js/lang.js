@@ -19,7 +19,7 @@
       hero: {
         welcome: "Selamat Datang di",
         serve: "Melayani dengan sepenuh hati",
-        provide: "Kami menyediakan layanan terbaik transportasi logistik, penanganan kargo, pergudangan dan kepengurusan dokumen ekspor – impor.",
+        provide: "Kami menyediakan layanan terbaik dalam transportasi logistik, modifikasi kontainer, pergudangan, dan konsultan lingkungan.",
         get_started: "Mulai"
       },
       about: {
@@ -35,7 +35,7 @@
         },
         integrity: {
           title: "Integritas",
-          description: "Kami banyak menangani cargo untuk barang-barang proyek, barang-barang industri dan juga barang-barang perdagangan. Barang-barang biasanya kami ambil di pabrik atau di lokasi proyek atau di perusahaan-perusahaan dan gudang-gudang. Kami mengantarnya sampai ke alamat tujuan baik di kota maupun di daerah terpencil seperti lokasi penambangan atau proyek-proyek infrasturktur dan proyek lainya."
+          description: "Kami yakin bahwa dengan menciptakan kondisi yang aman, menyenangkan dan memuaskan bagi pelanggan merupakan tujuan kami. Berdasarkan pengalaman yang kami miliki, kami menyelesaikan pekerjaan dengan baik dan tepat waktu."
         }
       },
       services: {
